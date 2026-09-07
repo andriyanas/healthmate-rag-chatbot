@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data (besar, di-generate ulang via script, jangan di-commit ke GitHub)
+data/*.csv
+chroma_db/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
