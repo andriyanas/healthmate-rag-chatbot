@@ -67,7 +67,7 @@ HealthMate employs a **hybrid RAG pipeline** designed to eliminate external API 
 ---
 
 ## 📁 Repository Structure
-
+```text
 healthmate-rag-chatbot/
 ├── app.py                  # Main Streamlit web application entry point
 ├── requirements.txt        # System dependency manifestations
@@ -81,9 +81,7 @@ healthmate-rag-chatbot/
 │   ├── rag_engine.py       # Orchestrator for retrieval and Gemini API
 │   └── prompts.py          # System instructions and prompt templates
 └── screenshots/            # UI execution artifacts for documentation
-
-
----
+```
 
 ## 🚀 Installation & Execution
 
