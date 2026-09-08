@@ -1,4 +1,3 @@
-Markdown
 # 🩺 HealthMate — RAG Health Q&A Engine
 
 An enterprise-grade Retrieval-Augmented Generation (RAG) conversational agent engineered for general healthcare inquiry processing. Built leveraging local vector embeddings and the Google Gemini API for cost-efficient response synthesis.
@@ -9,6 +8,7 @@ An enterprise-grade Retrieval-Augmented Generation (RAG) conversational agent en
 
 HealthMate employs a **hybrid RAG pipeline** designed to eliminate external API costs during document retrieval while maintaining context fidelity.
 
+```text
 +-----------------------------------------------------------------------+
 |                            USER QUERY                                 |
 +-----------------------------------------------------------------------+
@@ -30,14 +30,14 @@ HealthMate employs a **hybrid RAG pipeline** designed to eliminate external API 
 ▼
 +-----------------------------------------------------------------------+
 |  [3] RESPONSE GENERATION                                              |
-|  API    : Google Gemini API (gemini-3.1-flash-lite)                    |
+|  API    : Google Gemini API (gemini-3.1-flash-lite)                   |
 +-----------------------------------------------------------------------+
 │
 ▼
 +-----------------------------------------------------------------------+
-|  FINAL OUTPUT & CITED SOURCES                                         |
+|                    FINAL OUTPUT & CITED SOURCES                       |
 +-----------------------------------------------------------------------+
-
+```
 
 ### Design Rationale: Cost & Token Efficiency
 * **Zero-Cost Indexing & Retrieval**: Vector embeddings and semantic searches execute entirely on local hardware using `sentence-transformers`. The Gemini API is not invoked during data ingestion or initial document retrieval.
@@ -126,4 +126,3 @@ streamlit run app.py
 
 ## ⚠️ Medical & Legal Disclaimer
 HealthMate is strictly designed as an educational demonstration and research application. It does not provide medical diagnoses, treatment recommendations, or clinical decision support. All content is generated using public domain datasets and must not replace professional clinical advice.
-'''
